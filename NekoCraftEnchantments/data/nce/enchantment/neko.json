@@ -1,0 +1,37 @@
+{
+    "description": "Neko",
+    "supported_items": "#minecraft:head_armor",
+    "primary_items": "#minecraft:head_armor",
+    "weight": 2,
+    "max_level": 1,
+    "min_cost": {
+      "base": 6,
+      "per_level_above_first": 3
+    },
+    "max_cost": {
+      "base": 21,
+      "per_level_above_first": 3
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "head"
+    ],
+    "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nce:enchants/neko"
+        },
+        "requirements": {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "periodic_tick": 12000
+            }
+        }
+      }
+    ]
+  }
+}
+  

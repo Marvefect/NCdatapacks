@@ -1,0 +1,33 @@
+{
+    "description": {
+      "translate": "enchantment.nce.whisper_of_the_void",
+      "fallback": "Whisper Of The Void"
+    },
+    "supported_items": "shield",
+    "primary_items": "shield",
+    "weight": 5,
+    "max_level": 1,
+    "min_cost": {
+      "base": 6,
+      "per_level_above_first": 3
+    },
+    "max_cost": {
+      "base": 21,
+      "per_level_above_first": 3
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "hand"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "whisper_of_the_void",
+          "attribute": "minecraft:gravity",
+          "amount": -0.1,
+          "operation": "add_multiplied_base"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,19 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "player",
+    "slots": {
+      "weapon.*": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {
+              "enchantments": "nce:magnet",
+              "levels": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}

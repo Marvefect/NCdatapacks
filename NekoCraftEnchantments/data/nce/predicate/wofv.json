@@ -1,0 +1,20 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "player",
+      "slots": {
+        "weapon.*": {
+          "predicates": {
+            "minecraft:enchantments": [
+              {
+                "enchantments": "nce:whisper_of_the_void",
+                "levels": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+  

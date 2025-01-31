@@ -1,0 +1,68 @@
+{
+    "description": {
+        "translate": "enchantment.nce.rust_curse",
+        "fallback": "Curse of Rust"
+        },
+    "supported_items": "#minecraft:enchantable/equippable",
+    "primary_items": "#minecraft:enchantable/equippable",
+    "max_level": 1,
+    "weight": 5,
+    "min_cost": {
+        "base": 6,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 21,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 1,
+    "slots": [
+        "armor"
+    ],
+    "effects": {
+        "minecraft:tick": [
+            {
+                "effect": {
+                    "type": "change_item_damage",
+                    "amount": 1
+                },
+                "requirements": {
+                    "condition": "any_of",
+                    "terms": [
+                        {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "periodic_tick": 20,
+                                "location": {
+                                    "fluid": {
+                                        "fluids": "#minecraft:water"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "condition": "all_of",
+                            "terms": [
+                                {
+                                    "condition": "entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "periodic_tick": 20,
+                                        "location": {
+                                            "can_see_sky": true
+                                        }   
+                                    } 
+                                },
+                                {
+                                    "condition": "weather_check",
+                                    "raining": true
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

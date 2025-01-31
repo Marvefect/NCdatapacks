@@ -1,0 +1,46 @@
+{
+    "description": {
+        "translate": "enchantment.nce.second_breath",
+        "fallback": "Second Breath"
+        },
+    "supported_items": "#minecraft:foot_armor",
+    "primary_items": "#minecraft:foot_armor",
+    "exclusive_set": "soul_speed",
+    "weight": 5,
+    "max_level": 1,
+    "min_cost": {
+      "base": 6,
+      "per_level_above_first": 3
+    },
+    "max_cost": {
+      "base": 21,
+      "per_level_above_first": 3
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "feet"
+    ],
+    "effects":{
+        "minecraft:location_changed": [
+            {
+                "effect": {
+                    "type": "minecraft:attribute",
+                    "id": "second_breath",
+                    "attribute": "movement_speed",
+                    "amount": 0.2,
+                    "operation": "add_multiplied_base"
+                },
+                "requirements": {
+                    "condition": "minecraft:entity_scores",
+                    "entity": "this",
+                    "scores": {
+                        "nce.health": {
+                            "max": 4,
+                            "min": 0
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

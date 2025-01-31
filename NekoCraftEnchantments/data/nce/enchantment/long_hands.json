@@ -1,0 +1,37 @@
+{
+    "description": {
+      "translate": "enchantment.nce.long_hands",
+      "fallback": "Long Hands"
+    },
+    "supported_items": "mace",
+    "primary_items": "mace",
+    "weight": 5,
+    "max_level": 3,
+    "min_cost": {
+      "base": 6,
+      "per_level_above_first": 3
+    },
+    "max_cost": {
+      "base": 21,
+      "per_level_above_first": 3
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "offhand"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "fast_swing",
+          "attribute": "minecraft:block_interaction_range",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 1,
+            "per_level_above_first": 1
+          },
+          "operation": "add_value"
+        }
+      ]
+    }
+  }
+  

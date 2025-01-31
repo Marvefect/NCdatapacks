@@ -1,0 +1,33 @@
+{
+    "description": {
+      "translate": "enchantment.nce.heaviness_curse",
+      "fallback": "Curse of Heaviness"
+    },
+    "supported_items": "#minecraft:enchantable/equippable",
+    "primary_items": "#minecraft:enchantable/equippable",
+    "weight": 5,
+    "max_level": 1,
+    "min_cost": {
+      "base": 6,
+      "per_level_above_first": 3
+    },
+    "max_cost": {
+      "base": 21,
+      "per_level_above_first": 3
+    },
+    "anvil_cost": 1,
+    "slots": [
+      "armor"
+    ],
+    "effects": {
+      "minecraft:attributes": [
+        {
+          "id": "curse_of_heaviness",
+          "attribute": "minecraft:movement_speed",
+          "amount": -0.25,
+          "operation": "add_multiplied_base"
+        }
+      ]
+    }
+  }
+  

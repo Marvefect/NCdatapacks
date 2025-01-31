@@ -1,0 +1,35 @@
+{
+  "description": {
+    "translate": "enchantment.nce.crushing",
+    "fallback": "Crushing"
+  },
+  "exclusive_set": "nce:fast_swing",
+  "supported_items": "#minecraft:axes",
+  "primary_items": "#minecraft:axes",
+  "weight": 5,
+  "max_level": 1,
+  "min_cost": {
+    "base": 6,
+    "per_level_above_first": 3
+  },
+  "max_cost": {
+    "base": 21,
+    "per_level_above_first": 3
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "hand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "nce:enchants/crushing"
+        }
+      }
+    ]
+  }
+}
